@@ -13,7 +13,7 @@ test : Discord
 
 # **핵심코드**
 디스코드 봇을 제작하는 과정에서 가장 중요하게 생각한 코드는 dm이 아닌 서버에서 봇을 사용할 수 있게 해주는 intents 명령어와, cmd 클래스와 client 명령어를 동시에 실행 시켜주는 run_bot_and_main() 함수 등으로 정리 할 수 있을 것 같다.  
-```
+```py
 client = discord.Client(intents=discord.Intents.all())
 
 async def main(): #cmd 클래스를 실행 시켜주는 main() 함수 호출
